@@ -52,3 +52,7 @@ h1 {
   background-color: #c93a57;
   color: white;
 }
+
+.hide {
+  display: none;
+}

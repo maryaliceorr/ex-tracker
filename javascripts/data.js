@@ -1,16 +1,15 @@
 const dom = require('./dom');
-const loadEx = require ('./ex');
+const loadEx = require('./ex');
 const loadLocations = require('./locations');
+const events = require('./events');
 
 const whenExLoads = (data) => {
   const domEx = dom.printEx(data.ex);
-  console.log('data', data);
-  console.log('domEx', domEx);
   $('#ex').html(domEx);
+  events();
 };
 
 const whenLocationLoads = (data) => {
-  console.log('data', data);
   $('#locations').html(dom.printLocations(data.locations));
 };
 
