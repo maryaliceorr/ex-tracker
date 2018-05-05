@@ -1,3 +1,54 @@
 body {
-  background-color: blue;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+h1 {
+  color: white;
+}
+
+.ex-card {
+  background-color: pink;
+  width: 700px;
+  text-align: center;
+}
+
+#locations {
+  width: 100%;
+}
+
+.location-card {
+  background-color: darkred;
+  color: white;
+}
+.location-heading {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchbar {
+  margin: 20px;
+}
+
+#searchbar .searchbutton {
+  background-color: #c93a57;
+  color: white;
+}
+
+.btn-lg {
+  margin: 20px;
+  background-color: #c93a57;
+  color: white;
 }

@@ -9,8 +9,35 @@
   <title>Ex Tracker</title>
 </head>
 <body>
-  <h1>Ex Tracker</h1>
-
+  <h1 class="text-center">Ex Tracker</h1>
+  <div class="row center" id="searchbar">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search here">
+        <span class="input-group-btn">
+          <button class="btn searchbutton" type="button">Search  <span class="glyphicon glyphicon-search"></span></button>
+        </span>
+      </div>
+    </div>
+</div>
+<div class="center">
+  <button type="button" class="btn btn-default btn-lg" id="morning">
+    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Morning
+  </button>
+  <button type="button" class="btn btn-default btn-lg" id="afternoon">
+    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Afternoon
+  </button>
+  <button type="button" class="btn btn-default btn-lg" id="evening">
+    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Evening
+  </button>
+  <button type="button" class="btn btn-default btn-lg" id="after-dark">
+    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> After Dark
+  </button>
+</div>
+  <div class="center">
+    <div class="center" id="ex"></div>
+  </div>
+  <div class="row" id="locations" ></div>
 
 
   <script
