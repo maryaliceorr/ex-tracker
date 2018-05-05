@@ -42,7 +42,7 @@ h1 {
   margin: 20px;
 }
 
-#searchbar .searchbutton {
+#searchbar #searchbutton {
   background-color: #c93a57;
   color: white;
 }
@@ -55,4 +55,9 @@ h1 {
 
 .hide {
   display: none;
+}
+
+#reset-button {
+  background-color: white;
+  color: #c93a57;
 }
