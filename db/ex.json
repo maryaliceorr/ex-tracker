@@ -1,10 +1,10 @@
 {
   "ex": [
     {
-    "img": "../images/burger",
-    "name": " Ron 'Burger' Livingston",
+    "img": "/images/burger.jpg",
+    "name": "Ron 'Burger' Livingston",
     "age": "35",
-    "flaws": "sucked at communication, broke up with me via post it, was kind of boring in office space"
+    "flaws": "Sucked at communication, broke up with me via post it, was kind of boring in office space."
     }
   ]
 }

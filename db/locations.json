@@ -4,55 +4,55 @@
     "id": "1",
     "name": "Barista Parlor",
     "address": "519 Gallatin Ave B, Nashville, TN 37206",
-    "time": "morning"
+    "time": "Morning"
     },
     {
     "id": "2",
     "name": "Carrie's Apartment",
     "address": "64 Perry St, New York, NY 10014",
-    "time": "afternoon"
+    "time": "Afternoon"
     },
     {
     "id": "3",
     "name": "The Office",
     "address": "901 Woodland St, Nashville, TN 37206",
-    "time": "morning"
+    "time": "Morning"
     },
     {
       "id": "4",
       "name": "Mas Tacos",
       "address": "732 Mcferrin Ave, Nashville, TN 37206",
-      "time": "afternoon"
+      "time": "Afternoon"
     },
     {
     "id": "5",
     "name": "Five Points Pizza",
     "address": "1012 Woodland St, Nashville, TN 37206",
-    "time": "after dark"
+    "time": "After Dark"
     },
     {
       "id": "6",
       "name": "Percy Preist Lake",
       "address": "2901 Bell Rd, Nashville, TN 37217",
-      "time": "afternoon"
+      "time": "Afternoon"
     },
     {
     "id": "7",
     "name": "The Frist Museum",
     "address": "919 Broadway, Nashville, TN 37203",
-    "time": "afternoon"
+    "time": "Afternoon"
     },
     {
       "id": "8",
       "name": "Publix",
       "address": "15544 Old Hickory Blvd, Nashville, TN 37211",
-      "time": "evening"
+      "time": "Evening"
     },
     {
       "id": "9",
       "name": "The Crag South",
       "address": "15115 Old Hickory Blvd Suite C, Nashville, TN 37211",
-      "time": "evening"
+      "time": "Evening"
     }
   ]
 }
