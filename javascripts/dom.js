@@ -18,14 +18,14 @@ const printEx = (ex) => {
 const printLocations = (locations) => {
   let domStrang = '';
   locations.forEach((location) => {
-    domStrang += `<div class='col-sm-4'>`;
+    domStrang += `<div class='col-sm-4 location'>`;
     domStrang +=  `<div class='panel panel default'>`;
     domStrang +=    `<div class='panel-heading location-heading'>`;
     domStrang +=      `<h2 class='panel-title'><strong>Location: </strong>${location.name}</h2>`;
     domStrang +=    `</div>`;
     domStrang +=    `<div class='panel-body location-card'>`;
     domStrang +=      `<h4><strong>Address: </strong>${location.address}</h4>`;
-    domStrang +=      `<h4><strong>Time That Ex Normally Goes: </strong>${location.time}</h4>`;
+    domStrang +=      `<h4><strong>Time That Ex Normally Goes: </strong><span class="time ${location.time.toLowerCase().replace(' ', '-')}">${location.time}</span></h4>`;
     domStrang +=    `</div>`;
     domStrang +=  `</div>`;
     domStrang += `</div>`;
