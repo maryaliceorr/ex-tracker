@@ -22,6 +22,7 @@ h1 {
 
 #locations {
   width: 100%;
+  margin: 5px;
 }
 
 .location-card {
