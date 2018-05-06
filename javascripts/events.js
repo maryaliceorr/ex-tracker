@@ -1,5 +1,10 @@
-// Button Events
+// uppercase
+jQuery.expr[':'].icontains = function (a, i, m) {
+  return jQuery(a).text().toUpperCase()
+    .indexOf(m[3].toUpperCase()) >= 0;
+};
 
+// Button Events
 const filterMorning = () => {
   $('.time').not('.morning').closest('.location').hide();
   $('.time').filter('.morning').closest('.location').show();
@@ -34,24 +39,14 @@ const buttonClicks = () => {
 
 // Search bar Events
 
-const searchInput = $('#search-input').val().toLowerCase();
-
-console.log('searchInput', searchInput);
-
-const locationCardText = $('.location').html();
-
 const matchCards = () => {
   $('#search-input').keypress(function (e) {
+    const searchInput = $('#search-input').val();
     if (e.which === 13) {
-      console.log('locationCardText', locationCardText);
+      $(`#locations .location:not(:icontains(${searchInput}))`).hide();
     }
   });
 };
-// if (locationCardText.contains(searchInput)) {
-//   $('.location').show();
-// } else {
-//   $('.location').hide();
-// };
 
 module.exports =  {
   buttonClicks,
