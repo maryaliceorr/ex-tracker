@@ -6,7 +6,8 @@ const events = require('./events');
 const whenExLoads = (data) => {
   const domEx = dom.printEx(data.ex);
   $('#ex').html(domEx);
-  events();
+  events.buttonClicks();
+  events.matchCards();
 };
 
 const whenLocationLoads = (data) => {
