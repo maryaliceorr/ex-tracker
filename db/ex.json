@@ -1,10 +1,46 @@
 {
-  "ex": [
+  "exes": [
     {
     "img": "/images/burger.jpg",
     "name": "Ron 'Burger' Livingston",
     "age": "35",
-    "flaws": "Sucked at communication, broke up with me via post it, was kind of boring in office space."
+    "flaws": "Sucked at communication, broke up with me via post it, was kind of boring in office space.",
+    "locations": [1, 4, 8]
+    },
+    {
+    "img": "/images/c3p0.jpg",
+    "name": "C3P0",
+    "age": "40",
+    "flaws": "Has no emotion, kind of annoying, lacking a human quality.",
+    "locations": [2, 3, 6]
+    },
+    {
+    "img": "/images/batman.jpg",
+    "name": "Batman",
+    "age": "34",
+    "flaws": "Struggled with his vigilante complex, always sounded like he had a frog in his throat, wore too much black.",
+    "locations": [5, 7, 9]
+    },
+    {
+    "img": "/images/einstein.jpg",
+    "name": "Einstein",
+    "age": "70",
+    "flaws": "Always thought he knew everything, never combed his hair, could never get past talking about relativity.",
+    "locations": [1, 2, 3]
+    },
+    {
+    "img": "/images/kramer.jpg",
+    "name": "Cosmo Kramer",
+    "age": "42",
+    "flaws": "When he smoked he looked hideous, he shaved with butter, he was a bit of a hipster doofus.",
+    "locations": [4, 5, 6]
+    },
+    {
+    "img": "/images/hansolo.jpg",
+    "name": "Han Solo",
+    "age": "33",
+    "flaws": "Too cocky, too good looking for his own good, when I said I love you he said 'I know'.",
+    "locations": [7, 8, 9]
     }
   ]
 }
