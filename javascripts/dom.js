@@ -1,18 +1,18 @@
-const printEx = (ex) => {
+const printEx = (exes) => {
   let domStrang = '';
-  for (let i = 0; i < ex.length; i++) {
-    domStrang += `<div class='panel panel-default ex-card'>`;
+  for (let i = 0; i < exes.length; i++) {
+    domStrang += `<div class='col-sm-4 panel panel-default ex-card'>`;
     domStrang +=  `<div class='panel-heading'>`;
-    domStrang +=    `<h2 class='panel-title'><strong>EX: </strong>${ex[i].name}</h2>`;
+    domStrang +=    `<h2 class='panel-title'><strong>EX: </strong>${exes[i].name}</h2>`;
     domStrang +=  `</div>`;
     domStrang +=  `<div class='panel-body'>`;
-    domStrang +=    `<img src='${ex[i].img}' alt='Burger'>`;
-    domStrang +=    `<h4><strong>Age: </strong>${ex[i].age}</h4>`;
-    domStrang +=    `<h4><strong>Flaws: </strong>${ex[i].flaws}</h4>`;
+    domStrang +=    `<img class='ex-img' src='${exes[i].img}'>`;
+    domStrang +=    `<h4><strong>Age: </strong>${exes[i].age}</h4>`;
+    domStrang +=    `<h4><strong>Flaws: </strong>${exes[i].flaws}</h4>`;
     domStrang +=  `</div>`;
     domStrang += `</div>`;
   };
-  return domStrang;
+  $('#ex').html(domStrang);
 };
 
 const printLocations = (locations) => {
@@ -30,7 +30,7 @@ const printLocations = (locations) => {
     domStrang +=  `</div>`;
     domStrang += `</div>`;
   });
-  return domStrang;
+  $('#locations').html(domStrang);
 };
 
 module.exports = {

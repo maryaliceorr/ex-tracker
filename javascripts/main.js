@@ -1,3 +1,3 @@
 const goTime = require('./data');
 
-goTime();
+goTime.initializer();

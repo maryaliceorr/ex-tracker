@@ -62,3 +62,18 @@ h1 {
   background-color: white;
   color: #c93a57;
 }
+
+.ex-card {
+  height: 600px;
+  width: 100%;
+  margin: 20px;
+}
+
+#ex-row {
+  width: 100%;
+}
+
+.ex-img {
+  height: 400px;
+  width: 400px;
+}
