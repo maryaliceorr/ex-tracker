@@ -1,7 +1,7 @@
 const dom = require('./dom');
+const events = require('./events');
 // const loadEx = require('./ex');
 // const loadLocations = require('./locations');
-// const events = require('./events');
 
 // const whenExLoads = (data) => {
 //   const domEx = dom.printEx(data.ex);
@@ -55,15 +55,15 @@ const locationsJSON = () => {
   });
 };
 // ---------DOM Promise----------------------- //
-const printExesAndLocations = () => {
-  return Promise.all([exJSON(), locationsJSON(),])
-    .then((results) => {
-      const data = [...results[0], ...results[1],];
-      return Promise.resolve(data);
-    }).catch ((error) => {
-      console.error(error);
-    });
+const getExesAndLocations = () => {
+  exJSON().then((result) => {
+    dom.printEx(result);
+  });
+  locationsJSON().then((result2) => {
+    dom.printLocations(result2);
+  });
 };
+
 // ------------Event Listener Promise----------- //
 // const printExesAndLocations = () => {
 //   let data = [];
@@ -81,12 +81,9 @@ const printExesAndLocations = () => {
 // };
 
 const initializer = () => {
-  printExesAndLocations().then((data) => {
-    dom.printEx(data);
-    dom.printLocations(data);
-    // events.buttonClicks();
-    // events.matchCards();
-  });
+  getExesAndLocations();
+  events.buttonClicks();
+  events.matchCards();
 };
 
 module.exports = {

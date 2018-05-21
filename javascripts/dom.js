@@ -1,9 +1,9 @@
 const printEx = (exes) => {
   let domStrang = '';
   for (let i = 0; i < exes.length; i++) {
-    domStrang += `<div class='col-sm-4 panel panel-default ex-card'>`;
+    domStrang += `<div class='col-sm-4 panel ex-card'>`;
     domStrang +=  `<div class='panel-heading'>`;
-    domStrang +=    `<h2 class='panel-title'><strong>EX: </strong>${exes[i].name}</h2>`;
+    domStrang +=    `<h2 class='panel-title'><strong>EX: </strong>${exes[i].exName}</h2>`;
     domStrang +=  `</div>`;
     domStrang +=  `<div class='panel-body'>`;
     domStrang +=    `<img class='ex-img' src='${exes[i].img}'>`;
@@ -11,8 +11,9 @@ const printEx = (exes) => {
     domStrang +=    `<h4><strong>Flaws: </strong>${exes[i].flaws}</h4>`;
     domStrang +=  `</div>`;
     domStrang += `</div>`;
+    domStrang += `</div>`;
   };
-  $('#ex').html(domStrang);
+  $('#ex-holder').html(domStrang);
 };
 
 const printLocations = (locations) => {
@@ -21,7 +22,7 @@ const printLocations = (locations) => {
     domStrang += `<div class='col-sm-4 location'>`;
     domStrang +=  `<div class='panel panel default'>`;
     domStrang +=    `<div class='panel-heading location-heading'>`;
-    domStrang +=      `<h2 class='panel-title'><strong>Location: </strong>${location.name}</h2>`;
+    domStrang +=      `<h2 class='panel-title'><strong>Location: </strong>${location.locationName}</h2>`;
     domStrang +=    `</div>`;
     domStrang +=    `<div class='panel-body location-card'>`;
     domStrang +=      `<h4><strong>Address: </strong>${location.address}</h4>`;

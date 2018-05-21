@@ -10,7 +10,8 @@
 </head>
 <body>
   <h1 class="text-center">Ex Tracker</h1>
-  <div class="row center" id="searchbar">
+
+  <div class="center row" id="searchbar">
     <div class="col-lg-6">
       <div class="input-group center">
         <input type="text" id="search-input" class="form-control" placeholder="Search here">
@@ -34,14 +35,19 @@
     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Reset
   </button>
 </div>
-<div class="center row" id="ex-row">
-  <div class="center" id="ex"></div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <div class="row">
+      <div id="ex-holder"></div>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
 </div>
 
 <div class="row" id="locations"></div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
