@@ -7,17 +7,22 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 h1 {
   color: white;
 }
-
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .ex-card {
+  height: 600px;
+  width: 450px;
   background-color: pink;
-  width: 700px;
   text-align: center;
+  margin: 20px;
 }
 
 #locations {
@@ -31,12 +36,6 @@ h1 {
 }
 .location-heading {
   text-align: center;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #searchbar {
@@ -61,16 +60,6 @@ h1 {
 #reset-button {
   background-color: white;
   color: #c93a57;
-}
-
-.ex-card {
-  height: 600px;
-  width: 100%;
-  margin: 20px;
-}
-
-#ex-row {
-  width: 100%;
 }
 
 .ex-img {
