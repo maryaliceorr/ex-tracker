@@ -48,6 +48,13 @@ const matchCards = () => {
   });
 };
 
+// const singleExClick = (e) => {
+//   const singleEx = e.target.id;
+//   $(document).on('click', singleEx, console.error('singleEx', singleEx));
+// };
+
+// singleExClick();
+
 module.exports =  {
   buttonClicks,
   matchCards,

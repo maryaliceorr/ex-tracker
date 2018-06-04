@@ -1,7 +1,7 @@
 const printEx = (exes) => {
   let domStrang = '';
   for (let i = 0; i < exes.length; i++) {
-    domStrang += `<div class='col-sm-4 panel ex-card'>`;
+    domStrang += `<div class='col-lg-2 panel ex-card'>`;
     domStrang +=  `<div class='panel-heading'>`;
     domStrang +=    `<h2 class='panel-title'><strong>EX: </strong>${exes[i].exName}</h2>`;
     domStrang +=  `</div>`;
